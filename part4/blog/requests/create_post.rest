@@ -1,0 +1,9 @@
+POST http://localhost:3001/api/posts HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Post title 1",
+    "author": "John Doe", 
+    "url": "https://www.google.com/",
+    "likes": 1
+}

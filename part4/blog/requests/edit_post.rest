@@ -1,0 +1,11 @@
+@id = 
+
+PUT http://localhost:3001/api/posts/{{id}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Updated title",
+    "author": "Updated author", 
+    "url": "https://www.google.com/",
+    "likes": 2
+}
