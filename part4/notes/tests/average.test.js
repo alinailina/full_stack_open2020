@@ -1,11 +1,12 @@
 const average = require("../utils/for_testing").average;
 
 describe("average", () => {
+// describe blocks are used for grouping tests into logical collections
   test("of one value is the value itself", () => {
     expect(average([1])).toBe(1);
   });
 
-  test("of many is calculated right", () => {
+  test("of many values is calculated right", () => {
     expect(average([1, 2, 3, 4, 5, 6])).toBe(3.5);
   });
 

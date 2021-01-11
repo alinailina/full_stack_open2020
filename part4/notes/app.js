@@ -1,10 +1,15 @@
 const express = require("express");
 const app = express();
+
+const mongoose = require("mongoose");
+
 const cors = require("cors");
 const router = require("./controllers/routes");
-const mongoose = require("mongoose");
-const config = require("./utils/config");
+const middleware = require("./utils/middleware");
+
 const logger = require("./utils/logger");
+const config = require("./utils/config");
+
 
 const url = config.MONGODB_URI;
 
@@ -23,8 +28,10 @@ mongoose
   });
 
 
-app.use(express.json());
 app.use(cors());
-app.use("/api/posts", router);
+app.use(express.json());
+app.use("/api/notes", router);
+app.use(middleware.unknownEndpoint);
+app.use(middleware.errorHandler);
 
 module.exports = app;

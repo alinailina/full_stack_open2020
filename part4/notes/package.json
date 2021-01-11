@@ -1,5 +1,5 @@
 {
-  "name": "blog",
+  "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,17 +10,19 @@
     "lint": "eslint ."
   },
   "author": "Alina Ilina",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.11.11"
+    "mongoose": "^5.11.3"
   },
   "devDependencies": {
     "eslint": "^7.17.0",
+    "eslint-plugin-mocha-no-only": "^1.1.1",
     "jest": "^26.6.3",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.6",
+    "supertest": "^6.0.1"
   },
   "jest": {
     "testEnvironment": "node"
