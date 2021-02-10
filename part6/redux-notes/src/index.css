@@ -16,8 +16,14 @@ code {
   width: 80%;
   margin: 50px auto;
 }
+td:first-of-type {
+  width: 300px;
+}
 
 input {
   padding: 8px 2px;
   margin: 0 10px 0 0;
+}
+input[type="radio"] {
+  margin: 0 5px;
 }
